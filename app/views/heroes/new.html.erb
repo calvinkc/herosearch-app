@@ -1,0 +1,17 @@
+<h1>Create new Hero</h1>
+
+<%= form_tag "/heroes" do %>
+   <%= label_tag :name %>
+   <%= text_field_tag :name %>
+
+   <%= label_tag :power %>
+   <%= text_field_tag :power %>
+
+   <%= label_tag :desc %>
+   <%= text_field_tag :desc %>
+
+   <%= label_tag :job %>
+   <%= text_field_tag :job %>
+
+   <%= submit_tag "Create Hero" %>
+<% end %>
